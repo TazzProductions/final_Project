@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- <link rel="stylesheet" href="css/car-grid(2).css"> -->
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="First-top-nav">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="car-grid.html">Invetory</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="ResponsiveFTN()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#login" style="color:blue"> Login</a>
+      <a href="#divider">||</a>
+      <a href="signup" style="color:blue"> New User</a>
+    </div>
+  </div>
+
+  <div class="parralax">
+    <img src="#" alt="">
+  </div>
+
+  <div class="start">
+    <button></button>
+  </div>
+
+  <div class="searh-inventory">
+    <div class="form-menu">
+      <label for="Car-info" class="ml-20"><strong>BOOK A CAR HERE</strong></label>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-4">
+            <label for="condition">Car's Condition</label>
+            <div class="custom-select" style="width:200px;">
+              <select>
+                <option value="condition">Condition</option>
+                <option value="New Car">New Car</option>
+                <option value="Used Car">Used Car</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="body-type">Car's Body Type</label>
+            <div class="custom-select" style="width:200px;">
+              <select>
+                <option value="body">Body</option>
+                <option value="coupe">Coupe</option>
+                <option value="compact">Compact</option>
+                <option value="four door">4 Door</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="car's-make">Select Car's Make</label>
+            <div class="custom-select" style="width:200px;">
+              <select>
+                <option value="0">Select car make:</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+                <option value="5">Honda</option>
+                <option value="6">Jaguar</option>
+                <option value="7">Land Rover</option>
+                <option value="8">Mercedes</option>
+                <option value="9">Mini</option>
+                <option value="10">Nissan</option>
+                <option value="11">Toyota</option>
+                <option value="12">Volvo</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-4">
+            <label for="model">Car's Model</label>
+            <div class="custom-select" style="width:200px;">
+              <select>
+                <option value="0">Model:</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+                <option value="5">Honda</option>
+                <option value="6">Jaguar</option>
+                <option value="7">Land Rover</option>
+                <option value="8">Mercedes</option>
+                <option value="9">Mini</option>
+                <option value="10">Nissan</option>
+                <option value="11">Toyota</option>
+                <option value="12">Volvo</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="year">Production Year</label>
+            <div class="custom-select" style="width:200px;">
+              <select>
+                <option value="0">Year:</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+                <option value="5">Honda</option>
+                <option value="6">Jaguar</option>
+                <option value="7">Land Rover</option>
+                <option value="8">Mercedes</option>
+                <option value="9">Mini</option>
+                <option value="10">Nissan</option>
+                <option value="11">Toyota</option>
+                <option value="12">Volvo</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="transmission">Transmission Type</label>
+            <div class="custom-select" style="width:200px;">
+              <select>
+                <option value="0">Transmission:</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+                <option value="5">Honda</option>
+                <option value="6">Jaguar</option>
+                <option value="7">Land Rover</option>
+                <option value="8">Mercedes</option>
+                <option value="9">Mini</option>
+                <option value="10">Nissan</option>
+                <option value="11">Toyota</option>
+                <option value="12">Volvo</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="Range-slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="slidecontainer">
+                <label for="Price">Spending Range For Rental (Daily) </label>
+                <input type="range" min="150" max="1500" value="750" class="slider" id="priceRange">
+                <p>Value: $<span id="price"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Search-Button">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <form class="find-car">
+                <button type="submit"><strong>FIND MY CAR</strong> <i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+
+</html>
