@@ -1,5 +1,5 @@
 class Vehicle {
-    constructor(id, PName, seatNum, mpg, tachometer, luggageCap, transmission, engine, horsepower, BName) {
+    constructor(id, PName, seatNum, mpg, tachometer, luggageCap, transmission, engine, horsepower, BName, img, Pabout, PCabout, price) {
         this.id = id;
         this.PName = PName;
         this.seatNum = seatNum;
@@ -10,6 +10,10 @@ class Vehicle {
         this.engine = engine;
         this.horsepower = horsepower;
         this.BName = BName;
+        this.img = img;
+        this.Pabout = Pabout;
+        this.PCabout = PCabout;
+        this.price = price;
     }
 }
 

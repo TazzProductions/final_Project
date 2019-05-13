@@ -13,6 +13,11 @@ let init = function () {
         " transmission TEXT," +
         " engine TEXT," +
         " horsepower INTEGER" +
+        " BName TEXT" +
+        " img TEXT" +
+        " Pabout TEXT" +
+        " PCabout TEXT" +
+        " price INTEGER" +
         ")");
 };
 

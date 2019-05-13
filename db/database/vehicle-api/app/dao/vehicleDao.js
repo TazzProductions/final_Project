@@ -26,7 +26,11 @@ class VehicleDao {
                     row.transmission,
                     row.engine,
                     row.horsepower,
-                    row.BName
+                    row.BName,
+                    row.img,
+                    row.Pabout,
+                    row.PCabout,
+                    row.price
                 ));
             }
             return vehicles;
@@ -41,7 +45,9 @@ class VehicleDao {
                 brands.push(new Brand(
                     row.id,
                     row.PName,
-                    row.BName
+                    row.BName,
+                    row.img,
+                    row.brandSlug,
                 ));
             }
             return brands;
