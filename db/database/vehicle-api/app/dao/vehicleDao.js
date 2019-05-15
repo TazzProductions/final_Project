@@ -37,6 +37,24 @@ class VehicleDao {
         });
     }
 
+    findAllBrandsSingle(brand) {
+        let sqlRequest = "SELECT * FROM brands WHERE BName = '" + brand + "'";
+        return this.common.findAll(sqlRequest).then(rows => {
+            let brands = [];
+            for (const row of rows) {
+                brands.push(new Brand(
+                    row.id,
+                    row.PName,
+                    row.BName,
+                    row.img,
+                    row.brandSlug,
+                    row.singleStyle
+                ));
+            }
+            return brands;
+        });
+    }
+
     findAllBrands() {
         let sqlRequest = "SELECT * FROM brands";
         return this.common.findAll(sqlRequest).then(rows => {
@@ -48,6 +66,7 @@ class VehicleDao {
                     row.BName,
                     row.img,
                     row.brandSlug,
+                    row.singleStyle
                 ));
             }
             return brands;

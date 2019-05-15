@@ -28,10 +28,7 @@ class SingleProduct extends React.Component {
         luggageCap: '',
         transmission: '',
       }
-
-
     }
-
   }
 
   componentDidMount() {
@@ -43,9 +40,8 @@ class SingleProduct extends React.Component {
         return item.id === Number(this.props.match.params.id) ? item : null;
       });
       this.setState({
-        loading: false,
         product
-      });
+      })
     });
   }
 

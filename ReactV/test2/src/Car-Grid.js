@@ -20,7 +20,7 @@ function CarGrid()  {
       </div>
 
     )
-}
+} 
 
 
 export default CarGrid

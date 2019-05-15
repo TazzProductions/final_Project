@@ -15,6 +15,13 @@ class VehicleController {
             .catch(this.common.findError(res));
     }
 
+    findAllBrandsSingle(req,res) {
+        let brand = req.params.brand;
+        this.vehicleDao.findAllBrandsSingle(brand)
+            .then(this.common.findSuccess(res))
+            .catch(this.common.findError(res));
+    }
+
     findAllBrands(res) {
         this.vehicleDao.findAllBrands()
             .then(this.common.findSuccess(res))

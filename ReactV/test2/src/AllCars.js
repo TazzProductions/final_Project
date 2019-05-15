@@ -32,7 +32,7 @@ import React from 'react';
           <div className="container">
             <div className="row">
               <div className="single-grid col-sm-4">
-                <a href="c4.html" onclick="">
+                <a href="/product/4" onclick="">
                   <img src="images/c4.jpg" alt="All-Cars" />
                   <h4>Ferrari 488 Spider</h4>
                 </a>

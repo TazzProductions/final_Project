@@ -21,7 +21,7 @@ class Brands extends React.Component {
     <div className="container">
       <div className="row">
         <div className="col-sm-2">
-          <a href="/brands/audi">
+          <a href="/brands/Audi">
             <img src="images/audi-rentals.jpg" alt="Audi Rentals" />
           </a>
         </div>
@@ -69,13 +69,15 @@ class Brands extends React.Component {
             <img src="images/b7.jpg" alt="Corvette Rentals" />
           </a>
         </div>
+
         <div className="col-sm-2">
           <div className="single-brand">
-            <a href="/products">
+            <a href="/brands/Ferrari">
               <img src="images/b8.jpg" alt="brand-names" />
             </a>
           </div>
         </div>
+
         <div className="col-sm-2">
           <div className="single-brand">
             <a href="/products">

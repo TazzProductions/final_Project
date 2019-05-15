@@ -1,7 +1,7 @@
 import React from "react";
 
 import Home from './Home';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import CarGrid from './Car-Grid';
 import SingleProduct from './SingleProduct';
 // import AudiBrand from './AudiBrand';
@@ -18,9 +18,12 @@ function App(){
           <Route path="/products" component={CarGrid} />
           <Route path="/product/:id" component={SingleProduct} />
           <Route path="/brands/:brandSlug" component={BrandFilter} />
-          <Route path='/no-cars'component={NoCars} />
-        </Switch>
-      </BrowserRouter>
-    )
-  }
-  export default App;
+          <Route path='/no-cars' component={NoCars} />
+          {/*<Redirect to="/404" />*/}
+
+          </Switch>
+          </BrowserRouter>
+          )
+        }
+        export default App;
+        // <Route path="/brands/:brandSlug" component={BrandFilter} />

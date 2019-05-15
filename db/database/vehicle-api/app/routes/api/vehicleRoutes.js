@@ -11,11 +11,15 @@ router.get("/", function (req, res) {
     // res.send([{hello:"world"}]);
 });
 
+router.get("/brands/:brand", function (req, res) {
+    vehicleController.findAllBrandsSingle(req, res);
+    // res.send([{hello:"world"}]);
+});
+
 router.get("/brands", function (req, res) {
     vehicleController.findAllBrands(res);
     // res.send([{hello:"world"}]);
 });
-
 
 router.get("/SPP", function (req, res) {
     vehicleController.findAllSPP(res);
